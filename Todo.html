@@ -1,0 +1,38 @@
+<! DOCTYPE html>
+<html lang="en">
+
+<Head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todo App</title>
+	<link rel="shortcut icon" type="image/png" href="logo.png">
+	<link rel="stylesheet" href="style.css">
+</Head>
+
+<body>
+	<h1>ToDo</h1>
+	<form id="form">
+		<input type = "text" 
+            id = "input" 
+            class = "input" 
+            placeholder="Enter your ToDo"
+            autocomplete="off">
+
+            <ul class = "todos" id = "todos">
+            </ul>
+        </form>
+        <small>Left click to complete <br> Right click or double click to remove</small>
+        <button class="trigger"><img src="info.png" alt="How to use?" style= "width: 10px; height: 10px"></button>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">×</span>
+                <h4 style= "text-align: center; ">Welcome to To-Do!</h4>
+                <p style= "text-align: center; ">Enter your to-dos in the text box.</p>
+                <p style= "text-align: center; ">Left click to check them off.</p>
+                <p style= "text-align: center; ">Right click or double click to remove to-do</p>
+            </div>
+        </div>
+        <p class= "xsmall">Created by: Sreenand Mallisetty</p>
+        <script src="script.js">defer</script>
+    </body>
+</html>
